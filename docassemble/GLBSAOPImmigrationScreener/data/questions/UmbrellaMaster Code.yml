@@ -1,0 +1,39 @@
+---
+question: |
+  If you'd like additional help from GBLS on this matter, please request your CORI record prior to contacting us.
+event: no_CORI_ending_screen
+buttons:
+  - Continue: continue
+---
+question: |
+  Thanks for your submission!
+  [SKIPLINE]
+  [SKIPLINE]
+  If you have a court date within the next 30 days, please contact Phi Nguyen at PTran@gbls.org. Otherwise, contact/visit GBLS or our community partners:      
+  [SKIPLINE]
+  [SKIPLINE]
+  1) GBLS' Asian Outreach Unit - Community Intake Hours at the Vietnamese American Community Center (42 Charles St in Dorchester) every Tuesday 2-4pm (assistance avilable in Vietnamese) 
+  [SKIPLINE]
+  [SKIPLINE]
+  2) Cambodian Mutual Assistance Association (CMAA) - Lowell and Northeast region
+  [SKIPLINE]
+  [SKIPLINE]
+  3) Asian American Resource Workshop (AARW) - Greater Boston area 
+event: interview_finished_ending_screen 
+#attachment:              #start of what next project owners can work on
+  #name: Summary of Responses
+  #filename: response_summary
+  #content: |
+    # Summary of your responses
+    #${user}
+    #% if reason_variable == 'My family member or relative has been detained in Immigration and Customs Enforcement (ICE) custody.':
+    #% if familial_relation: 
+---
+question: |
+  Thanks for the information. We'll keep your answers on file, but recommend that you connect with your attorney before continuing to work with GBLS.
+event: attorney_ending_screen
+---
+question: |
+  We can't pull your CORI record without a Social Security Number. Please contact GBLS for assistance.
+event: no_SSN_ending_screen
+---
